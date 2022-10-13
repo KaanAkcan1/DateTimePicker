@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="datetimeselector.css">
+    <script src="https://kit.fontawesome.com/0f733b5954.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="datetimeselector">
+        <!-- <input id="dts-value" type="text" class="dts-hidden">
+
+        <div id="dts-main">
+            <div id="dts-main1">
+                <div id="dts-showTime">
+                    <div id="dts-showTimeClock">
+                        09:05
+                    </div>
+                    <div id="dts-showTimeDayMonth">
+                        <div id="dts-showTimeToday">
+                            10
+                        </div>
+                        <div id="dts-showTimeMonth">
+                            Kasım
+                        </div>
+                    </div>
+                    <div id="dts-showTimeYear">
+                        1938
+                    </div>
+                </div>
+            </div>
+            <div id="dts-main2">
+                <div id="dts-buttons" style="display: none;">
+                    <span class="dts-button" id="dts-buttons-clock"><a href="#" title=""><img src="/clock.png" alt="" width="30px" height="30px"></a></span>
+                    <span class="dts-button" id="dts-buttons-calender"><a href="#" title=""><img src="/calendar.png" alt="" width="30px" height="30px"></a></span>
+                </div>
+
+                <div id="dts-datePicker">
+                    <div id="dts-datePicker-yearMonth">
+                        <div id="dts-datePicker-month">
+                            <a href="#">
+                                <div class="dts-datePicker-arrow" id="dts-datePicker-monthLeftArrow">
+                                    <i class="fa fa-angle-left fa-xl"></i>
+                                </div>
+                            </a>
+                            
+                            <div id="dts-datePicker-monthContent">
+                                Ağustos
+                            </div>
+                            <a href="#">
+                                <div class="dts-datePicker-arrow" id="dts-datePicker-monthRightArrow">
+                                    <i class="fa fa-angle-right fa-xl"></i>
+                                </div>
+                            </a>     
+                        </div>
+                        <div id="dts-datePicker-year">
+                            <a href="#">
+                                <div class="dts-datePicker-arrow" id="dts-datePicker-yearLeftArrow">
+                                    <i class="fa fa-angle-left fa-xl"></i>
+                                </div>
+                            </a>
+                            
+                            <div id="dts-datePicker-yearContent">
+                                2022
+                            </div>
+                            <a href="#">
+                                <div class="dts-datePicker-arrow" id="dts-datePicker-yearRightArrow">
+                                    <i class="fa fa-angle-right fa-xl"></i>
+                                </div>
+                            </a>                          
+                        </div>                        
+                    </div>
+                    <div id="dts-datePicker-day">
+                        <table>
+                            <thead>
+                                <th> </th>
+                                <th id="weekshortday0">Pts</th>
+                                <th id="weekshortday1">Sal</th>
+                                <th id="weekshortday2">Çrş</th>
+                                <th id="weekshortday3">Prş</th>
+                                <th id="weekshortday4">Cum</th>
+                                <th id="weekshortday5">Cmt</th>
+                                <th id="weekshortday6">Paz</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="borderNone">1</td>
+                                    <td id="week0day0">29</td>
+                                    <td id="week0day1">30</td>
+                                    <td id="week0day2">31</td>
+                                    <td id="week0day3">1</td>
+                                    <td id="week0day4">2</td>
+                                    <td id="week0day5">3</td>
+                                    <td id="week0day6">4</td>
+                                </tr>
+                                <tr>
+                                    <td class="borderNone">2</td>
+                                    <td id="week1day0">5</td>
+                                    <td id="week1day1">6</td>
+                                    <td id="week1day2">7</td>
+                                    <td id="week1day3">8</td>
+                                    <td id="week1day4">9</td>
+                                    <td id="week1day5">10</td>
+                                    <td id="week1day6">11</td>
+                                </tr>
+                                <tr>
+                                    <td class="borderNone">3</td>
+                                    <td id="week2day0">12</td>
+                                    <td id="week2day1">13</td>
+                                    <td id="week2day2">14</td>
+                                    <td id="week2day3">15</td>
+                                    <td id="week2day4">16</td>
+                                    <td id="week2day5">17</td>
+                                    <td id="week2day6">18</td>
+                                </tr>
+                                <tr>
+                                    <td class="borderNone">4</td>
+                                    <td id="week3day0">19</td>
+                                    <td id="week3day1">20</td>
+                                    <td id="week3day2">21</td>
+                                    <td id="week3day3">22</td>
+                                    <td id="week3day4">23</td>
+                                    <td id="week3day5">24</td>
+                                    <td id="week3day6">25</td>
+                                </tr>
+                                <tr>
+                                    <td class="borderNone">5</td>
+                                    <td id="week4day0">26</td>
+                                    <td id="week4day1">27</td>
+                                    <td id="week4day2">28</td>
+                                    <td id="week4day3">29</td>
+                                    <td id="week4day4">30</td>
+                                    <td id="week4day5">31</td>
+                                    <td id="week4day6">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="borderNone">6</td>
+                                    <td id="week5day0">2</td>
+                                    <td id="week5day1">3</td>
+                                    <td id="week5day2">4</td>
+                                    <td id="week5day3">5</td>
+                                    <td id="week5day4">6</td>
+                                    <td id="week5day5">7</td>
+                                    <td id="week5day6">8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="dts-datePicker-buttons">
+                        <div class="dts-datePicker-button" id="dts-datePicker-saveButton">
+                            Kaydet
+                        </div>
+                        <div class="dts-datePicker-button" id="dts-datePicker-cancelButton">
+                            Vazgeç
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dts-timePicker" style="display: none;">
+                    <div id="dts-timePicker-boxes">
+
+                    </div>
+                    <div id="dts-timePicker-buttons">
+                        <div class="dts-timePicker-button" id="dts-timePicker-saveButton">
+                            Kaydet
+                        </div>
+                        <div class="dts-timePicker-button" id="dts-timePicker-cancelButton">
+                            Vazgeç
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div> -->
+    </div>
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="datetimeselector.js"></script>
+<script>
+    $('#datetimeselector').append('<input id="dts-value" type="text" class="dts-hidden"><div id="dts-main"><div id="dts-main1"><div id="dts-showTime"><div id="dts-showTimeClock">09:05</div><div id="dts-showTimeDayMonth"><div id="dts-showTimeToday">10</div><div id="dts-showTimeMonth">Kasım</div></div><div id="dts-showTimeYear">1938</div></div></div><div id="dts-main2"><div id="dts-buttons" style="display: none;"><span class="dts-button" id="dts-buttons-clock"><a href="#" title=""><img src="/clock.png" alt="" width="30px" height="30px"></a></span><span class="dts-button" id="dts-buttons-calender"><a href="#" title=""><img src="/calendar.png" alt="" width="30px" height="30px"></a></span></div><div id="dts-datePicker"><div id="dts-datePicker-yearMonth"><div id="dts-datePicker-month"><a href="#"><div class="dts-datePicker-arrow" id="dts-datePicker-monthLeftArrow"><i class="fa fa-angle-left fa-xl"></i></div></a><div id="dts-datePicker-monthContent">Ağustos</div><a href="#"><div class="dts-datePicker-arrow" id="dts-datePicker-monthRightArrow"><i class="fa fa-angle-right fa-xl"></i></div></a></div><div id="dts-datePicker-year"><a href="#"><div class="dts-datePicker-arrow" id="dts-datePicker-yearLeftArrow"><i class="fa fa-angle-left fa-xl"></i></div></a><div id="dts-datePicker-yearContent">2022</div><a href="#"><div class="dts-datePicker-arrow" id="dts-datePicker-yearRightArrow"><i class="fa fa-angle-right fa-xl"></i></div></a></div></div><div id="dts-datePicker-day"><table><thead><th> </th><th id="weekshortday0">Pts</th><th id="weekshortday1">Sal</th><th id="weekshortday2">Çrş</th><th id="weekshortday3">Prş</th><th id="weekshortday4">Cum</th><th id="weekshortday5">Cmt</th><th id="weekshortday6">Paz</th></thead><tbody><tr><td class="borderNone">1</td><td id="week0day0">29</td><td id="week0day1">30</td><td id="week0day2">31</td><td id="week0day3">1</td><td id="week0day4">2</td><td id="week0day5">3</td><td id="week0day6">4</td></tr><tr><td class="borderNone">2</td><td id="week1day0">5</td><td id="week1day1">6</td><td id="week1day2">7</td><td id="week1day3">8</td><td id="week1day4">9</td><td id="week1day5">10</td><td id="week1day6">11</td></tr><tr><td class="borderNone">3</td><td id="week2day0">12</td><td id="week2day1">13</td><td id="week2day2">14</td><td id="week2day3">15</td><td id="week2day4">16</td><td id="week2day5">17</td><td id="week2day6">18</td></tr><tr><td class="borderNone">4</td><td id="week3day0">19</td><td id="week3day1">20</td><td id="week3day2">21</td><td id="week3day3">22</td><td id="week3day4">23</td><td id="week3day5">24</td><td id="week3day6">25</td></tr><tr><td class="borderNone">5</td><td id="week4day0">26</td><td id="week4day1">27</td><td id="week4day2">28</td><td id="week4day3">29</td><td id="week4day4">30</td><td id="week4day5">31</td><td id="week4day6">1</td></tr><tr><td class="borderNone">6</td><td id="week5day0">2</td><td id="week5day1">3</td><td id="week5day2">4</td><td id="week5day3">5</td><td id="week5day4">6</td><td id="week5day5">7</td><td id="week5day6">8</td></tr></tbody></table></div><div id="dts-datePicker-buttons"><div class="dts-datePicker-button" id="dts-datePicker-saveButton">Kaydet</div><div class="dts-datePicker-button" id="dts-datePicker-cancelButton">Vazgeç</div></div></div><div id="dts-timePicker" style="display: none;"><div id="dts-timePicker-boxes"></div><div id="dts-timePicker-buttons"><div class="dts-timePicker-button" id="dts-timePicker-saveButton">Kaydet</div><div class="dts-timePicker-button" id="dts-timePicker-cancelButton">Vazgeç</div></div></div></div></div>');
+    dts.takenDatesBind(["2022,10,20 12:00","2022,10,20 14:00"])
+    var options = {
+        isWeekendActive: true,
+        nonChoosableDays: ["2022, 10, 21", "2022, 10, 19"],//Date Array cinsinde özel olarak seçilmeyecek günler
+        startDate: "2022, 10, 17",//Date cinsinde başlangıç günü
+        endDate: "2025,12,17",//Date cinsinde bitiş günü
+        openMonthsCount: 48 ,//int aktiflik süresi
+        nonChoosableHours : null,
+        period : 60,
+        periodStartFreeTime : 0,
+        periodEndFreeTime : 0,
+        startClock :"09:00",
+        endClock :"18:00"
+    }
+    dts.init(options);
+</script>
